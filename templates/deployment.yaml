@@ -18,7 +18,7 @@ spec:
         - name: imgcred
       containers:
         - name: hello-gin
-          image: harbor.codemowers.eu/ingermhelena/hello-gin@sha256:b6b952d46fb434ea3c59137f39dd0992f71144d967b4e142be9ae17e4fbe38a5
+          image: harbor.codemowers.eu/ingermhelena/hello-gin@sha256:69286a073cadd205097ee970ae29406c37dcb838a7f14bae51f4020a5817c6a9
           env:
             - name: MY_POD_NAME
               valueFrom:
