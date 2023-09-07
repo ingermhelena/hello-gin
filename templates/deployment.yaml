@@ -25,6 +25,7 @@ spec:
             - name: MY_POD_NAME
               valueFrom:
                 fieldRef:
+                apiVersion: v1 
                   fieldPath: spec.nodeName
           ports:
             - containerPort: 8000
