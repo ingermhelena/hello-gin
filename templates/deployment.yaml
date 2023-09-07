@@ -20,6 +20,8 @@ spec:
         - name: hello-gin
           image: harbor.codemowers.eu/ingermhelena/hello-gin@sha256:69286a073cadd205097ee970ae29406c37dcb838a7f14bae51f4020a5817c6a9
           env:
+            - name: USERNAME
+              value: {{ .Values.username }}
             - name: MY_POD_NAME
               valueFrom:
                 fieldRef:
