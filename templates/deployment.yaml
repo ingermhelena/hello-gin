@@ -13,6 +13,10 @@ spec:
       labels:
         app: hello-gin
     spec:
+      securityContext:
+        fsGroup: 2000
+        runAsGroup: 3000
+        runAsUser: 1000
       enableServiceLinks: false
       imagePullSecrets:
         - name: imgcred
